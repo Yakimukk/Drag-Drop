@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.row .col-header {
+  width: 150px;
+  -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+          box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+.row .placeholder {
+  width: 150px;
+  height: 66px;
+}
+.row .placeholder .item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+          box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.row .placeholder .item:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.row .placeholder .hold {
+  border: 5px solid #f5ccec;
+}
+.row .placeholder .hide {
+  display: none;
+}
+.row .start {
+  background: -webkit-gradient(linear, left top, right top, from(#a17945), to(#94078d));
+  background: linear-gradient(90deg, #a17945 0%, #94078d 100%);
+}
+.row .progress {
+  background: -webkit-gradient(linear, left top, right top, from(#94078d), to(#8f2a3b));
+  background: linear-gradient(90deg, #94078d 0%, #8f2a3b 100%);
+}
+.row .done {
+  background: -webkit-gradient(linear, left top, right top, from(#8f2a3b), to(#03354e));
+  background: linear-gradient(90deg, #8f2a3b 0%, #03354e 100%);
+}
+.row .hovered {
+  border-top: 2px solid #d6c0c0;
+}
